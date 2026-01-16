@@ -7,8 +7,6 @@
     list-style: none;
     text-decoration: none;
 
-
-
 }
 
 header{
@@ -113,7 +111,7 @@ section{
 }
 
 .main-btn{
-    display: inline-block;
+    display: inline-flex;
     color: #111;
     font-size: 16px;
     font-weight: 500;
@@ -122,6 +120,7 @@ section{
     padding: 12px 25px;
     transition: all .42 ease;
 }
+
 
 .main-btn:hover{
     background-color: #000;
