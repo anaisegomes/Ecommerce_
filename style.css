@@ -21,8 +21,8 @@ header{
     padding: 20px 10%
 }
 
-.logo img{
-    max-width: 120px;
+.logoimg{
+    max-width: 5px;
     height: auto;
 }
 
@@ -113,8 +113,8 @@ section{
 .main-btn{
     display: inline-flex;
     color: #111;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
     text-transform: capitalize;
     border: 2px solid #111;
     padding: 12px 25px;
@@ -143,4 +143,47 @@ section{
     border: 2px solid #2c2c2c;
     border-radius: 50px;
     padding: 12px 12px;
+}
+
+.down i:hover{
+    background-color: #000;
+    padding: 20px;
+}
+header.sticky{
+    background-color: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 0 / 10%);
+}
+/* trending-section-css*/
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.center-text span{
+    color: brown;
+}
+
+.products{
+    max-width: 300px;
+    margin-left: 20x;
+    margin-bottom: 20px;
+
+}
+
+.container{
+    display: flex;
+
+}
+
+.product-card{
+    margin-bottom: 20px;
+    margin-left: 20x;
+}
+
+.linha {
+  width: 100%;
+  border-bottom: 1px solid #000000;
 }
