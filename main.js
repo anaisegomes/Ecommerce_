@@ -8,7 +8,8 @@ const translations = {
         pargr2: "There's Nothing like Trend!",
         pargr3: "Shop Now",
         pargr4: "Our Trending Products",
-        pargr5: "Sale"
+        pargr5: "Sale",
+        pargr: "Shop Now"
     },
 
     Portuguese: {
@@ -19,7 +20,8 @@ const translations = {
         pargr2: "Não Há Nada Como Uma Tendência!",
         pargr3: "Compre Agora",
         pargr4: "Nossos Produtos em Tendências",
-        pargr5: "Venda"
+        pargr5: "Venda",
+        pargr3: "Compre Agora"
     }
 }
 
@@ -56,6 +58,7 @@ const setLanguage = (Language) => {
         Shop.innerText = translations.Portuguese.pargr3;
         pargr4.innerText = translations.Portuguese.pargr4,
         pargr5.innerText = translations.Portuguese.pargr5
+
         
 }
 
