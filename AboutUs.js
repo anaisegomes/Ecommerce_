@@ -2,38 +2,27 @@ const translations = {
     
     English: {
 
-        Selct : "", 
-        title: "",
-        pargr: "",
-        pargr2: "",
-        pargr3: "",
-        pargr4: "",
-        pargr5: "",
-        pargr: ""
+        Selct : "Select Language", 
+        h1: "About Us (Kumon)",
+        h4: "How did Kumon start?",
+        pargr2: "Kumon was born from the creativity of a fashion student living in Brazil. /n In 2021, her dream moved forward with the help of her mother /n Since then, the store has been selling clothes for women to feel good about themselves."
     },
 
     Portuguese: {
 
-        Selct : "",
-        title : "",
-        pargr: "",
-        pargr2: "",
-        pargr3: "",
-        pargr4: "",
-        pargr5: "",
-        pargr3: ""
+        Selct : "Selecione o idioma",
+        h1 : "Sobre Nós (Kumon)",
+        h4: "Como a Kumon começou?",
+        pargr2: "A Kumon surgiu da criatividade de uma estudante de moda que mora no brasil, /n Kate amava desenhar roupas desde pequenas e viu uma oportunidade da sua criatividade sair do papel /n Desde então a loja vende roupa para mulheres se sentirem bem consigo mesmas"
     }
 }
 
 
 const LanguageSelectop = document.querySelector('Select');
 
-let h5 = document.querySelector('h5');
-let h1= document.querySelector('h1');
-let par = document.querySelector('p.parq');
-let Shop = document.querySelector('div.teste');
-let pargr4 = document.querySelector('div.center-text');
-let pargr5 = document.querySelector('div.product-'); 
+let h1 = document.querySelector('h1');
+let h4= document.querySelector('h4');
+let pargr2 = document.querySelector('p.parqr2');
 
 LanguageSelectop.addEventListener("change", (event) => {
     setLanguage(event.target.value)
@@ -43,22 +32,16 @@ LanguageSelectop.addEventListener("change", (event) => {
 const setLanguage = (Language) => {
     if(Language=="English"){
 
-        h5.innerText = translations.English.title;
-        h1.innerText = translations.English.pargr;
+        h1.innerText = translations.English.h1;
+        h4.innerText = translations.English.h4;
         par.innerText = translations.English.pargr2;
-        Shop.innerText = translations.English.pargr3;
-        pargr4.innerText = translations.English.pargr4;
-        pargr5.innerText = translations.English.pargr5
         return;
 
 } else  if (Language=="Portuguese")
-        h5.innerText = translations.Portuguese.title;
-        h1.innerText = translations.Portuguese.pargr;
+        h1.innerText = translations.Portuguese.h1;
+        h4.innerText = translations.Portuguese.h4;
         par.innerText = translations.Portuguese.pargr2;
-        Shop.innerText = translations.Portuguese.pargr3;
-        pargr4.innerText = translations.Portuguese.pargr4,
-        pargr5.innerText = translations.Portuguese.pargr5
-
+    
         
 }
 
